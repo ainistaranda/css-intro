@@ -5,47 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intro to CSS</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <style>
-    * {
-        /* color: green; */
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-    }
-    body {
-        background-color: yellowgreen;
-
-    }
-    /* id selector */
-    #contact {
-        background-color: brown;
-    }
-
-    p {
-        color:teal;
-    }
-    /* class selector */
-    .my-ps {
-        background-color: rgb(229, 134, 134);
-    }
-    .my-width {
-        width: 200px;
-    }
-
-    li {
-        color: hotpink
-    }
-
-    footer {
-        background-color: tan;
-    }
-    /* child selectors */
-    footer > h3 {
-        background-color: red;
-    }
-    footer > ul > li {
-        color:blueviolet
-    }
+    /* infile styles  */
   </style>
   <body>
     <header>
@@ -67,6 +30,8 @@
         </ul>
       </nav>
     </header>
+    <button onclick="handleColorChange()">press me</button>
+    <button onclick="handleAlert()">Show alert</button>
     <p class="my-ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consectetur quidem commodi ullam aliquid dolore doloremque. Incidunt, accusamus illum veniam optio dolorem cum corrupti maxime sunt, neque beatae provident officia?
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia optio assumenda perferendis, doloribus, nisi earum similique eveniet omnis a necessitatibus reiciendis, odit quo laudantium ipsa quis hic maxime aperiam perspiciatis.
         Ea molestiae ipsum delectus nobis iusto provident magni sint corrupti iste sequi, vel, explicabo debitis? Voluptatibus illum fugiat, facilis nam tempora dolor exercitationem reiciendis nisi! Et corrupti repudiandae in error?
@@ -76,6 +41,14 @@
     </p>
     <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa provident fugit ea debitis sint. Magni iusto vero exercitationem dolores nulla in quae aspernatur qui, reiciendis dolore inventore nostrum veritatis cupiditate?</p>
     <h3>Another h3</h3>
+    <main>
+        <div class="box">
+            <span>box1</span>
+        <span>2nd span</span>
+    </div>
+        <div class="box"><span>box2</span></div>
+        <div class="box"><span>box3 </span></div>
+    </main>
     <footer>
         <h3>Hi Mom this is my css</h3>
         <ul>
@@ -84,5 +57,7 @@
             <li>Contact</li>
         </ul>
     </footer>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
