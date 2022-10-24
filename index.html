@@ -6,25 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intro to CSS</title>
   </head>
+  <style>
+    * {
+        /* color: green; */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    body {
+        background-color: yellowgreen;
+
+    }
+    /* id selector */
+    #contact {
+        background-color: brown;
+    }
+
+    p {
+        color:teal;
+    }
+    /* class selector */
+    .my-ps {
+        background-color: rgb(229, 134, 134);
+    }
+    .my-width {
+        width: 200px;
+    }
+
+    li {
+        color: hotpink
+    }
+
+    footer {
+        background-color: tan;
+    }
+    /* child selectors */
+    footer > h3 {
+        background-color: red;
+    }
+    footer > ul > li {
+        color:blueviolet
+    }
+  </style>
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class="my-ps my-width">
           <li
             style="
               color: #a948dde1;
               color: #d27ef6;
               font-size: x-large;
               letter-spacing: 3px;
-              background-color: #413b4eba;
+              background-color: #000000ba;
             "
           >
             About
           </li>
           <li>Services</li>
-          <li>Contact</li>
+          <li id="contact">Contact</li>
         </ul>
       </nav>
     </header>
+    <p class="my-ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consectetur quidem commodi ullam aliquid dolore doloremque. Incidunt, accusamus illum veniam optio dolorem cum corrupti maxime sunt, neque beatae provident officia?
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia optio assumenda perferendis, doloribus, nisi earum similique eveniet omnis a necessitatibus reiciendis, odit quo laudantium ipsa quis hic maxime aperiam perspiciatis.
+        Ea molestiae ipsum delectus nobis iusto provident magni sint corrupti iste sequi, vel, explicabo debitis? Voluptatibus illum fugiat, facilis nam tempora dolor exercitationem reiciendis nisi! Et corrupti repudiandae in error?
+        Porro, dolorum officia quibusdam cumque odio fugit iure veniam nulla cupiditate aut illo similique quo quaerat debitis dolores vero architecto veritatis blanditiis eum excepturi ex ipsam quod. Dolore, autem aliquam!
+        Error, optio. Dicta maiores quod voluptatibus deleniti voluptatem id, doloribus aliquid excepturi delectus vel laborum labore eum at obcaecati pariatur itaque! Deserunt cupiditate, quasi odit architecto amet molestias. Nam, neque?
+        Maiores voluptatibus impedit omnis fugit ipsum itaque adipisci quia qui autem, minus molestiae sequi, a excepturi placeat accusamus voluptas praesentium vel modi voluptatum suscipit necessitatibus distinctio ex. Iure, aut nobis!</p>
+    </p>
+    <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa provident fugit ea debitis sint. Magni iusto vero exercitationem dolores nulla in quae aspernatur qui, reiciendis dolore inventore nostrum veritatis cupiditate?</p>
+    <h3>Another h3</h3>
+    <footer>
+        <h3>Hi Mom this is my css</h3>
+        <ul>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </footer>
   </body>
 </html>
